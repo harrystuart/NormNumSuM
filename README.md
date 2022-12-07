@@ -3,6 +3,8 @@ NormNumSuM (Normalised Number of Substring Movements) is a string comparison alg
 
 Most existing string comparison algorithms, such as Levenshtein Distance, assert that the two strings should be "similar from left to right". These common algorithms are unsuitable for situations where one is looking to compare string similarity at the token level, where the order of tokens is less important. Rather than naively comparing tokens (where misspellings can be detrimental if token comparison is binary), the proposed substring approach allows for a more continous measure of similarity between strings at the token level. This is also a very lightweight approach relative to mechanisms employing semantic analysis.
 
+Below are some example results (lower is better.)
+
 
 ```
 normnumsum("richmond tigers vs sydney swans", "sydney swans vs richmond tigers")
